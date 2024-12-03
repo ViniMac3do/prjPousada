@@ -1,0 +1,453 @@
+
+
+/*GALERIA
+*
+*
+*/
+.galery{
+    background-color: #626264 ;
+   
+   
+}
+    
+.galery-body{
+    margin-top: 200px;
+    margin-left: 15%;
+    width: 80%;
+    align-self: center;
+    height: 1100px;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+
+    transition: scale 1s ease, opacity 1s linear;
+}
+
+.galery-body:has(img:hover) img:not(:hover){
+    scale: .9;
+    opacity: .7;
+}
+
+.colum1{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.colum2{
+    display: flex;
+    justify-content: flex-start;
+    
+}
+.colum3{
+    display: flex;
+    justify-content: flex-start;
+    
+}
+.colum4{
+    display: flex;
+    justify-content: flex-start;
+    
+}
+.colum5{
+    display: flex;
+    justify-content: flex-start;
+}
+.colum6{
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+.baixao{
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.inicio{
+    display: flex;
+    justify-content: space-around;
+    margin: 5px;
+}
+
+
+
+/*Index
+*
+o
+o
+o
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poopins', sans-serif;
+}
+
+html {
+  height: 100vh;
+}
+
+.contain {
+  max-width: 1280px;
+  color: #201717;
+  
+}
+h6{
+  color: #201717;
+
+}
+.nav{
+  margin-right: 30px;
+  color: #201717;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 150px;
+  width: 1400px;
+  margin-left: 0px;
+  color: #201717;
+}
+
+.cabeça {
+  width: 1535px;
+  color: black;
+  top: 0;
+  left: 0;
+  transition: 1s;
+  background: #f7f7f7;
+  height: 150px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  
+}
+
+
+
+
+
+.cabeça i {
+  font-size: 30px;
+  color: #201717;
+}
+
+.cabeça ul {
+  list-style-type: none;
+}
+
+.cabeça ul li {
+  display: inline-block;
+  margin: 0 40px;
+}
+
+.cabeça ul li a {
+  color: #1882ab;
+  text-decoration: none;
+}
+
+.banner {
+  height: 100vh;
+  background-image: url('../imagens/inicio/topo.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-bottom {
+  height: 100vh;
+  background-image: url('../imagens/galeria/luxo.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.texto-maldivas {
+  background-color: #ffffff; /* Cor de fundo branca */
+  padding: 20px; /* Espaçamento interno */
+  border-radius: 10px; /* Borda arredondada */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.suites-background {
+  background-color: #1882ab; /* Substitua pelo código de cor desejado */
+  color: #fff; /* Defina a cor do texto para contrastar com o fundo */
+  padding: 30px; /* Adicione um espaçamento interno para separar o conteúdo do fundo */
+}
+
+
+.btn-contato button {
+  width: 120px;
+  height: 40px;
+  border: 0;
+  background-color: #2e8cb2;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+btn-contato:hover{
+  background-color: white;
+  color: #1882ab;
+  transition: 1s;
+}
+
+.card {
+  border-radius: 40px;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.card h3 {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border-radius: 0px 0px 40px 40px;
+}
+
+.card .saiba-mais-button {
+  background-color: #fe775a;
+  color: #fff;
+  border: none;
+  border-radius:  40px 40px;
+  padding: 10px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/*Suites
+o
+o
+o
+*/
+
+.suit{
+  flex-direction: column;
+}
+
+.login{
+  display: flex;
+  justify-content: space-around;
+  background-color: #1882ab;
+  width: 1535px;
+  height: 80px;
+  color: white;
+  
+}
+
+#login-txt{
+  font-family: 'Poopins, sans-serif';
+  margin-top: 18px;
+
+}
+
+.btn-login button {
+  width: 120px;
+  height: 40px;
+  border: 0;
+  background-color: #2e8cb2;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-top: 23px;
+}
+
+btn-login:hover{
+  background-color: white;
+  color: #1882ab;
+  transition: 1s;
+}
+
+.container-suit{
+  background: #212122;
+  width: 100%;
+  height: 60%;
+  padding-bottom: 10%;
+}
+.grids{
+ 
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 5%;
+  margin-top: 3%;
+}
+
+/*form
+*/
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.card {
+  transition: height 0.5s ease-in-out;
+}
+
+.formulario {
+  display: none;
+  background-color: #f0f8ff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+form {
+  margin-top: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input, select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+}
+
+button {
+  background-color: #87CEEB;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4682b4;
+}
+
+#resultado {
+  margin-top: 20px;
+}
+
+.centro{
+  background-color: #98b5c0;
+  width: 700px;
+  height: 520px;
+  margin-left: 390px;
+  margin-top: 10px;
+  border-radius:60px ;
+  box-shadow: #212122;
+}
+
+.linha{
+  background-color: #2e8cb2;
+  width: 700px;
+  height: 70px;
+  border-radius: 61px 61px 0 0;
+  color: #f0f8ff;
+  text-align: center;
+}
+
+#titulo{
+  font-size: 40px;
+  margin-top: 5px;
+}
+
+.invisivel{
+  width: 10px;
+  height: 0px;
+}
+
+.dividir{
+  display: flex;
+  align-items: flex-start;
+}
+
+.form{
+  margin-left: 10px;
+  width: 60%;
+  height: 70%;
+
+}
+
+#dias{
+  align-items: center;
+  width: 300px;
+  height: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#label1{
+  margin-left: 35px;
+  color: #201717;
+}
+
+#cafe{
+  align-items: center;
+  width: 300px;
+  height: 33px;
+  margin-left: 20px;
+}
+
+#label2{
+  margin-left: 80px;
+  color: #201717;
+}
+
+#passeio{
+  align-items: center;
+  width: 300px;
+  height: 33px;
+  margin-left: 20px;
+}
+
+#label3{
+  margin-left: 80px;
+  color: #201717;
+}
+
+#labelzinho{
+  color: #00AC00;
+  font-size: 10px;
+  margin-left: 140px;
+}
+
+#botao{
+  margin-left: 120px;
+  
+}
+
+#resultado{
+  width: 200px;
+  height: 25px;
+  background-color: #1882ab;
+  border-radius: 30px;
+  color: #f0f8ff;
+  margin-left: 70px;
+  margin-bottom: 10px;
+}
+
+#entortar{
+  border-radius: 0 0 64px 0;
+}
+
+#botao2{
+  margin-left: 700px;
+  margin-top: 130px;
+}
+
+.grids{
+  color: black;
+  margin-left: 400px;
+  font-size: 30px;
+}

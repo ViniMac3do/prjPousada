@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="csss/styless.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Maldivas</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+
+
+        .cabeça {
+            background-color: transparent;
+            transition: background-color 0.3s ease-in-out, height 0.3s ease-in-out;
+            width: 100%;
+            top: 0;
+          
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000; /* Garante que a barra de navegação fique sobreposta a outros elementos */
+        }
+
+        .suit{
+            margin-bottom: 300px;
+            height: 1000px;
+        }
+        
+    </style>
+</head>
+<body class="suit">
+    <header class="cabeça">
+        <div class="contain">
+
+            <div class="flex">
+                
+                <a href="index.html"><img src="imagens/Logo/logo3.png" alt="" width="420px" height="300px" id="img3"></a>
+
+                <nav>
+                    <ul  class="preto">
+                        <h6 class="preto">
+                            <li><a href="index.html" >HOME</a></li>
+                            <li><a href="#">SUÍTES</a></li>
+                            <li><a href="galeria.html">GALERIA</a></li>
+                            <li><a href="avaliacao.html">AVALIAÇÃO</a></li>
+                        </ul>
+                    </h6>
+                </nav>
+                
+
+
+            </div><!-- flex -->
+            
+        </div><!--container-->
+        
+    </header>
+
+    <div class="login">
+        <div id="login-txt">
+            <h1>Efetue seu login e faça sua reserva já!</h1>
+        </div>
+        <div class="btn-login">
+            <a href="#"><button>Login</button></a>
+        </div>
+
+    </div>
+
+    <container class="container-suit">
+        <div class="grids">
+           <p>Venha se divertir na mais bela ilha das maldivas!</p>
+        </div>
+    </container>
+
+
+
+    <section class="py-5">
+            <div class="row gx-5 justify-content-center">
+                <div class="col-lg-11 col-xl-9 col-xxl-8">
+                    <!-- Project Card 1-->
+                    <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                        <div class="card-body p-0" >
+                            <div class="d-flex align-items-center">
+                                <div class="p-5">
+                                    <h2 class="fw-bolder">Pousada de luxo</h2>
+                                    <font color="gray">
+
+                                        <p>(R$800 a diária)</p>
+                                        <a href="luxo.html">
+
+                                            <button id="button" >Hospedar</button>
+                                        </a>
+                                    </font>
+                                </div>
+                                <img class="img-fluid" src="imagens/suites/luxo.jpg" alt="..." width="300px" height="300px"/>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project Card 2-->
+                    <div class="card overflow-hidden shadow rounded-4 border-0">
+                        <div class="card-body p-0">
+                            <div class="d-flex align-items-center">
+                                <div class="p-5">
+                                    <h2 class="fw-bolder">Pousada Clássica</h2>
+                                    <font color="gray">
+
+                                        <p>(R$600 a diária)</p>
+                                        <a href="normal.html">
+
+                                            <button id="button" >Hospedar</button>
+                                        </a>
+                                    </font>
+                                </div>
+                                <img class="img-fluid" src="imagens/suites/normal.jpg" alt="..." width="300px"/>
+                            </div>
+                        </div>
+                    </div>
+                    <!--card3-->
+                    <br><br>
+                    <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                        <div class="card-body p-0">
+                            <div class="d-flex align-items-center">
+                                <div class="p-5">
+                                    <h2 class="fw-bolder">Pousada Aquatica</h2>
+                                    <font color="gray">
+
+                                        <p>(R$1200 a diária)</p>
+                                        <a href="aquatico.html">
+
+                                            <button id="button" >Hospedar</button>
+                                        </a>
+                                    </font>
+                                </div>
+                                <img class="img-fluid" src="imagens/suites/aquatico.jpg" alt="..." width="300px" height="50px">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    &copy; 2023 Top Maldivas. Todos os direitos reservados.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+    
+    
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Maldivas</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body{
+            background-image: url('imagens/suites/fundo.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="suites.html">
+
+        <button type="button" id="botao2">Voltar</button>
+    </a>
+    <div class="centro">
+        <div class="invisivel"></div>
+        <div class="linha">
+            <p id="titulo">Suíte de Luxo</p>
+        </div>
+        <div class="dividir">
+            <div class="form">
+
+                <form id="formCalculo">
+                    <label for="dias" id="label1">Quantos dias você irá passar no local?</label>
+                    <input type="number" id="dias" name="dias" required>
+
+
+                    <label for="cafe" id="label2">Deseja café da manhã?</label>
+                    <font color="gray" >
+                    <label for="cafe" id="labelzinho">(120 R$)</label>
+                    </font>
+                    <select id="cafe" name="cafe" required>
+                        <option value="sim">Sim</option>
+                        <option value="nao">Não</option>
+                    </select>
+
+                    <label for="passeio" id="label3">Deseja incluir passeios?</label>
+                    <label for="passeio" id="labelzinho">(150 R$)</label>
+                    <select id="passeio" name="passeio">
+                        <option value="sim">Sim</option>
+                        <option value="nao">Não</option>
+                    </select>
+
+                    <button type="button" onclick="calcular()" id="botao">Ver valor</button>
+                    
+                </form>
+                <div id="resultado"></div>
+                <button type="button" id="botao">Hospedar</button>
+            </div>
+            <div class="img">
+                <img src="imagens/suites/luxo.jpg" height="450px" id="entortar">
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script>
+        function calcular() {
+     var dias = parseInt(document.getElementById('dias').value);
+     var cafeManha = document.getElementById('cafe').value;
+     var incluirPasseio = document.getElementById('passeio').value;
+
+
+     var precoApartamento = 800;
+     var precoCafeManha = 0;
+     var precoPasseio = 0;
+
+     if (cafeManha === 'sim') {
+         precoCafeManha = 120;
+     }
+
+     if (incluirPasseio === 'sim') {
+         precoPasseio = 150;
+     }
+
+     var total = (precoApartamento + precoCafeManha + precoPasseio) * dias;
+
+     var resultadoElement = document.getElementById('resultado');
+     resultadoElement.innerHTML = '<p>O preço total é: R$ ' + total.toFixed(2) + '</p>';
+ };
+
+    </script>
+</body>
+
+</html>
